@@ -1,0 +1,14 @@
+{
+  "tourist": {
+    "version": "1.0.0",
+    "url": "https://github.com/Seiderx/ipilgo-apps/releases/latest/download/IpilGo-Tourist.apk",
+    "notes": "",
+    "required": false
+  },
+  "owner": {
+    "version": "1.0.0",
+    "url": "https://github.com/Seiderx/ipilgo-apps/releases/latest/download/IpilGo-Owner.apk",
+    "notes": "",
+    "required": false
+  }
+}

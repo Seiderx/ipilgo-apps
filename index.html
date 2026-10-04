@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IpilGo · Download the App</title>
+<meta name="description" content="Download IpilGo, the AI travel guide for Ipil, Zamboanga Sibugay. Free Android apps for tourists and destination owners.">
+<meta property="og:title" content="IpilGo · Download the App">
+<meta property="og:description" content="AI travel guide for Ipil, Zamboanga Sibugay. Free for Android.">
+<meta property="og:image" content="img/tourist-icon.png">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Figtree:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="img/tourist-icon.png" alt="">IpilGo</a>
+  </div>
+</header>
+
+<section class="hero">
+  <canvas id="waves" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <span class="eyebrow">Ipil, Zamboanga Sibugay</span>
+    <h1>Explore Ipil with an AI travel guide</h1>
+    <p>Find destinations, plan trips, book visits and pay with GCash or Maya. Free to download for Android.</p>
+  </div>
+</section>
+
+<main>
+<div class="wrap" id="download">
+  <div class="apps">
+    <article class="app tourist" data-app="tourist">
+      <div class="info">
+        <img class="icon" src="img/tourist-icon.png" alt="">
+        <h2>IpilGo for Tourists</h2>
+        <p>Discover places, get AI suggestions, plan itineraries and book.</p>
+        <div class="meta" data-meta>Android 7.0 or newer</div>
+        <a class="btn" data-download href="https://github.com/Seiderx/ipilgo-apps/releases/latest/download/IpilGo-Tourist.apk">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Download APK
+        </a>
+      </div>
+      <div class="qr"><div class="box" data-qr></div><span>Scan with phone</span></div>
+    </article>
+
+    <article class="app owner" data-app="owner">
+      <div class="info">
+        <img class="icon" src="img/owner-icon.png" alt="">
+        <h2>IpilGo for Owners</h2>
+        <p>For destination owners: manage bookings, approve requests, track payments.</p>
+        <div class="meta" data-meta>Android 7.0 or newer</div>
+        <a class="btn" data-download href="https://github.com/Seiderx/ipilgo-apps/releases/latest/download/IpilGo-Owner.apk">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Download APK
+        </a>
+      </div>
+      <div class="qr"><div class="box" data-qr></div><span>Scan with phone</span></div>
+    </article>
+  </div>
+</div>
+
+<section class="block" id="install">
+  <div class="wrap">
+    <h2>How to install</h2>
+    <p class="lede">IpilGo is installed straight from this website instead of the Play Store, so Android asks two extra questions. Both are normal.</p>
+    <ol class="steps">
+      <li><b>Tap Download APK</b><span>Or scan the QR code with your phone camera.</span></li>
+      <li><b>Open the downloaded file</b><span>Find it in your notifications or the Downloads folder.</span></li>
+      <li><b>Allow installing</b><span>Android asks:</span><div class="prompt">Allow from this source? Tap <em>Allow</em></div></li>
+      <li><b>Install anyway</b><span>Play Protect may say:</span><div class="prompt">Unrecognized app. Tap <em>Install anyway</em></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <h2>Questions</h2>
+    <div class="faq">
+      <details>
+        <summary>How do I get updates?</summary>
+        <p>When a new version is out, the app shows an "Update available" message. Tap Update now, then Install. Your account and data stay as they are.</p>
+      </details>
+      <details>
+        <summary>It says "App not installed".</summary>
+        <p>You probably have an early test version on your phone. Uninstall IpilGo once, then install it again from this page.</p>
+      </details>
+      <details>
+        <summary>Is there an iPhone version?</summary>
+        <p>Not yet. IpilGo is available for Android phones only.</p>
+      </details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>IpilGo · BSCS Thesis Project · Ipil, Zamboanga Sibugay</span>
+    <div class="links"><a href="privacy.html">Privacy Policy</a><a href="data-deletion.html">Data Deletion</a></div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+(function () {
+  // QR codes point straight at each APK download.
+  document.querySelectorAll('[data-app]').forEach(function (card) {
+    var href = card.querySelector('[data-download]').href;
+    try {
+      new QRCode(card.querySelector('[data-qr]'), { text: href, width: 110, height: 110, colorDark: '#0D2233', colorLight: '#ffffff' });
+    } catch (e) {}
+  });
+
+  // Show the current version from version.json (same file the apps check).
+  fetch('version.json', { cache: 'no-store' })
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (v) {
+      if (!v) return;
+      document.querySelectorAll('[data-app]').forEach(function (card) {
+        var entry = v[card.getAttribute('data-app')];
+        if (entry && entry.version) {
+          card.querySelector('[data-meta]').textContent = 'Version ' + entry.version + ' · Android 7.0 or newer';
+        }
+      });
+    })
+    .catch(function () {});
+
+  var c = document.getElementById('waves');
+  var ctx = c.getContext('2d');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function draw(t) {
+    var w = c.clientWidth, h = c.clientHeight, dpr = window.devicePixelRatio || 1;
+    if (c.width !== w * dpr) { c.width = w * dpr; c.height = h * dpr; }
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, w, h);
+    ctx.lineWidth = 2; ctx.strokeStyle = '#FFFFFF';
+    for (var k = 0; k < 3; k++) {
+      ctx.beginPath();
+      for (var x = 0; x <= w; x += 6) {
+        var y = h * (0.35 + k * 0.22) + Math.sin(x / 70 + t / 1400 + k) * 9;
+        x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+      }
+      ctx.stroke();
+    }
+    if (!reduce) requestAnimationFrame(draw);
+  }
+  requestAnimationFrame(draw);
+})();
+</script>
+</body>
+</html>
