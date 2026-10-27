@@ -63,8 +63,7 @@ header.site { padding-block: 18px; }
 section.block { padding-block: 64px 8px; }
 section.block h2 { font-size: 30px; font-weight: 800; margin-bottom: 8px; }
 .lede { color: var(--muted); margin: 0 0 28px; max-width: 60ch; }
-.notice { display: grid; gap: 4px; max-width: 760px; margin: 0 0 22px; padding: 14px 18px; border-radius: 12px;
-  background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--ocean); }
+.notice { display: grid; gap: 4px; max-width: 760px; margin: -12px 0 28px; }
 .notice span { color: var(--muted); font-size: 14px; }
 .faq a { color: var(--ocean); font-weight: 600; }
 .steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; counter-reset: s; }
