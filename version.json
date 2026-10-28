@@ -1,8 +1,9 @@
 {
   "tourist": {
-    "version": "1.1.1",
+    "version": "1.2.0",
     "url": "https://github.com/Seiderx/ipilgo-apps/releases/latest/download/IpilGo-Tourist.apk",
-    "notes": "Bug fixes, usernames, notifications, smarter chat assistant.",
+    "notes":"Book spot services with deposits, editable itineraries, halal/dietary filter, tricycle fares, signup fixes.",
+
     "required": false
   },
   "owner": {
