@@ -1,15 +1,14 @@
 {
   "tourist": {
-    "version": "1.2.0",
+    "version": "1.3.0",
     "url": "https://github.com/Seiderx/ipilgo-apps/releases/latest/download/IpilGo-Tourist.apk",
-    "notes":"Book spot services with deposits, editable itineraries, halal/dietary filter, tricycle fares, signup fixes.",
-
+    "notes": "New cleaner look with light and dark mode, plus fare and dietary filter fixes.",
     "required": false
   },
   "owner": {
-    "version": "1.2.0",
+    "version": "1.3.0",
     "url": "https://github.com/Seiderx/ipilgo-apps/releases/latest/download/IpilGo-Owner.apk",
-    "notes": "Services & prices, down payments, one Bookings tab, record cash payments, halal tags, signup fixes.",
+    "notes": "New cleaner look with light and dark mode.",
     "required": false
   }
 }
