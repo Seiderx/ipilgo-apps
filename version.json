@@ -7,9 +7,9 @@
     "required": false
   },
   "owner": {
-    "version": "1.1.1",
+    "version": "1.2.0",
     "url": "https://github.com/Seiderx/ipilgo-apps/releases/latest/download/IpilGo-Owner.apk",
-    "notes": "Bug fixes, notifications, events & reviews, one account for tourist + owner.",
+    "notes": "Services & prices, down payments, one Bookings tab, record cash payments, halal tags, signup fixes.",
     "required": false
   }
 }
