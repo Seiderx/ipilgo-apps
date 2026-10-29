@@ -8,9 +8,11 @@
 <meta property="og:title" content="IpilGo · Download the App">
 <meta property="og:description" content="AI travel guide for Ipil, Zamboanga Sibugay. Free for Android.">
 <meta property="og:image" content="img/tourist-icon.png">
+<meta name="theme-color" content="#F6F1EA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14100D" media="(prefers-color-scheme: dark)">
 <link rel="icon" type="image/png" href="img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Figtree:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&family=Geist+Mono:wght@400&display=swap">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,13 +20,13 @@
 <header class="site">
   <div class="wrap">
     <a class="brand" href="./"><img src="img/tourist-icon.png" alt="">IpilGo</a>
+    <nav><a href="#download">Download</a><a href="#install">How to install</a><a href="#faq">Questions</a></nav>
   </div>
 </header>
 
 <section class="hero">
-  <canvas id="waves" aria-hidden="true"></canvas>
   <div class="wrap">
-    <span class="eyebrow">Ipil, Zamboanga Sibugay</span>
+    <span class="label">Ipil, Zamboanga Sibugay</span>
     <h1>Explore Ipil with an AI travel guide</h1>
     <p>Find destinations, plan trips, book visits and pay with GCash or Maya. Free to download for Android.</p>
   </div>
@@ -33,28 +35,28 @@
 <main>
 <div class="wrap" id="download">
   <div class="apps">
-    <article class="app tourist" data-app="tourist">
+    <article class="app" data-app="tourist">
       <div class="info">
         <img class="icon" src="img/tourist-icon.png" alt="">
         <h2>IpilGo for Tourists</h2>
         <p>Discover places, get AI suggestions, plan itineraries and book.</p>
         <div class="meta" data-meta>Android 7.0 or newer</div>
         <a class="btn" data-download href="https://github.com/Seiderx/ipilgo-apps/releases/latest/download/IpilGo-Tourist.apk">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="icon-line" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>
           Download APK
         </a>
       </div>
       <div class="qr"><div class="box" data-qr></div><span>Scan with phone</span></div>
     </article>
 
-    <article class="app owner" data-app="owner">
+    <article class="app" data-app="owner">
       <div class="info">
         <img class="icon" src="img/owner-icon.png" alt="">
         <h2>IpilGo for Owners</h2>
         <p>For destination owners: manage bookings, approve requests, track payments.</p>
         <div class="meta" data-meta>Android 7.0 or newer</div>
-        <a class="btn" data-download href="https://github.com/Seiderx/ipilgo-apps/releases/latest/download/IpilGo-Owner.apk">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <a class="btn outline" data-download href="https://github.com/Seiderx/ipilgo-apps/releases/latest/download/IpilGo-Owner.apk">
+          <svg class="icon-line" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>
           Download APK
         </a>
       </div>
@@ -68,8 +70,8 @@
     <h2>How to install</h2>
     <p class="lede">IpilGo is installed straight from this website instead of the Play Store, so Android asks two extra questions. Both are normal.</p>
     <div class="notice" role="note">
-      <b>Android phones only.</b>
-      <span>IpilGo is currently available on Android devices only. iPhone support is not yet available.</span>
+      <svg class="icon-line" viewBox="0 0 24 24" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+      <span><b>Android phones only.</b> IpilGo is currently available on Android devices only. iPhone support is not yet available.</span>
     </div>
     <ol class="steps">
       <li><b>Tap Download APK</b><span>Or scan the QR code with your phone camera.</span></li>
@@ -80,28 +82,28 @@
   </div>
 </section>
 
-<section class="block">
+<section class="block" id="faq">
   <div class="wrap">
     <h2>Questions</h2>
     <div class="faq">
       <details>
-        <summary>Play Protect warned me. Is IpilGo safe?</summary>
+        <summary>Play Protect warned me. Is IpilGo safe?<svg class="icon-line" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg></summary>
         <p>Yes. Android shows that warning for any app installed from outside the Play Store, not because something is wrong with IpilGo. Only download it from this page. See the <a href="privacy.html">Privacy Policy</a> for what the app collects.</p>
       </details>
       <details>
-        <summary>Which phones can install it?</summary>
+        <summary>Which phones can install it?<svg class="icon-line" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg></summary>
         <p>Android phones running Android 7.0 or newer. To check, open Settings, then About phone, and look for "Android version".</p>
       </details>
       <details>
-        <summary>Does it need internet?</summary>
+        <summary>Does it need internet?<svg class="icon-line" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg></summary>
         <p>Yes. Maps, routes, weather, the AI assistant, bookings and GCash or Maya payments all need mobile data or Wi-Fi.</p>
       </details>
       <details>
-        <summary>How do I get updates?</summary>
+        <summary>How do I get updates?<svg class="icon-line" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg></summary>
         <p>When a new version is out, the app shows an "Update available" message. Tap Update now, then Install. Your account and data stay as they are.</p>
       </details>
       <details>
-        <summary>It says "App not installed".</summary>
+        <summary>It says "App not installed".<svg class="icon-line" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg></summary>
         <p>You probably have an early test version on your phone. Uninstall IpilGo once, then install it again from this page.</p>
       </details>
     </div>
@@ -123,7 +125,7 @@
   document.querySelectorAll('[data-app]').forEach(function (card) {
     var href = card.querySelector('[data-download]').href;
     try {
-      new QRCode(card.querySelector('[data-qr]'), { text: href, width: 110, height: 110, colorDark: '#0D2233', colorLight: '#ffffff' });
+      new QRCode(card.querySelector('[data-qr]'), { text: href, width: 110, height: 110, colorDark: '#1E1712', colorLight: '#FFFCF8' });
     } catch (e) {}
   });
 
@@ -140,27 +142,6 @@
       });
     })
     .catch(function () {});
-
-  var c = document.getElementById('waves');
-  var ctx = c.getContext('2d');
-  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  function draw(t) {
-    var w = c.clientWidth, h = c.clientHeight, dpr = window.devicePixelRatio || 1;
-    if (c.width !== w * dpr) { c.width = w * dpr; c.height = h * dpr; }
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    ctx.clearRect(0, 0, w, h);
-    ctx.lineWidth = 2; ctx.strokeStyle = '#FFFFFF';
-    for (var k = 0; k < 3; k++) {
-      ctx.beginPath();
-      for (var x = 0; x <= w; x += 6) {
-        var y = h * (0.35 + k * 0.22) + Math.sin(x / 70 + t / 1400 + k) * 9;
-        x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
-      }
-      ctx.stroke();
-    }
-    if (!reduce) requestAnimationFrame(draw);
-  }
-  requestAnimationFrame(draw);
 })();
 </script>
 </body>
