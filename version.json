@@ -1,14 +1,14 @@
 {
   "tourist": {
-    "version": "1.4.0",
+    "version": "1.5.0",
     "url": "https://github.com/Seiderx/ipilgo-apps/releases/latest/download/IpilGo-Tourist.apk",
-    "notes": "Easier to find things: new Trips tab for itineraries, bookings and saved places, a shorter Home, swipeable photos, and a map view in Explore (turns on soon).",
+    "notes": "Delete your account from Profile, a 5-day weather forecast for trips, verified reviews with 'I'm here' check-in, smarter For You picks, a new About screen, and many fixes.",
     "required": false
   },
   "owner": {
-    "version": "1.4.0",
+    "version": "1.5.0",
     "url": "https://github.com/Seiderx/ipilgo-apps/releases/latest/download/IpilGo-Owner.apk",
-    "notes": "New ink blue look, and My Spot is now organized by topic: basic info, photos and 360°, tags, prices, events and reviews.",
+    "notes": "Delete your account from Profile, report reviews and get notified of new ones, booking references on payment notices, a new About screen, and many fixes.",
     "required": false
   }
 }
