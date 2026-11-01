@@ -32,7 +32,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 header.site { border-bottom: 1px solid var(--border); }
 header.site .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 64px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 500; font-size: 17px; letter-spacing: -0.02em; text-decoration: none; }
-.brand img { width: 28px; height: 28px; border-radius: 8px; }
+/* Same mark as inside the apps: a map pin on the accent tile. */
+.brand-mark { width: 28px; height: 28px; border-radius: 7px; background: var(--accent); color: var(--on-accent); display: inline-flex; align-items: center; justify-content: center; }
+.brand-mark svg { width: 15px; height: 15px; }
 header.site nav { display: flex; gap: 24px; font-size: 14px; color: var(--muted); }
 header.site nav a { text-decoration: none; }
 header.site nav a:hover { color: var(--text); }
