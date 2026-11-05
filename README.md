@@ -1,7 +1,7 @@
 # ipilgo-apps
 
 Public download site for the IpilGo Android apps (tourist + owner), plus the
-Privacy Policy and Data Deletion pages required for Facebook login.
+Privacy Policy and Data Deletion pages.
 Static HTML, hosted on Render. The APK files are attached to GitHub Releases
 of this repo, never committed.
 
