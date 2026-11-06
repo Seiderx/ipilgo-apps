@@ -1,14 +1,14 @@
 {
   "tourist": {
-    "version": "1.5.0",
+    "version": "1.6.0",
     "url": "https://github.com/Seiderx/ipilgo-apps/releases/latest/download/IpilGo-Tourist.apk",
-    "notes": "Delete your account from Profile, a 5-day weather forecast for trips, verified reviews with 'I'm here' check-in, smarter For You picks, a new About screen, and many fixes.",
+    "notes": "A new look and logo, a real map with road routes and fares, clearer weather with rain times, phone notifications, and Google sign-in.",
     "required": false
   },
   "owner": {
-    "version": "1.5.0",
+    "version": "1.6.0",
     "url": "https://github.com/Seiderx/ipilgo-apps/releases/latest/download/IpilGo-Owner.apk",
-    "notes": "Delete your account from Profile, report reviews and get notified of new ones, booking references on payment notices, a new About screen, and many fixes.",
+    "notes": "A new look and logo, phone notifications for bookings and reviews, a simpler dashboard, and Google sign-in.",
     "required": false
   }
 }
