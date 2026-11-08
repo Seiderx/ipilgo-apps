@@ -1,14 +1,14 @@
 {
   "tourist": {
-    "version": "1.7.0",
+    "version": "1.7.2",
     "url": "https://github.com/Seiderx/ipilgo-apps/releases/latest/download/IpilGo-Tourist.apk",
-    "notes": "Smarter AI search that reads photos and menus, Chavacano support, a better chat assistant, sharper 360 tours, and faster place pages.",
+    "notes": "New Home with a weather strip for the day, AI search that sticks to what you ask, a cleaner welcome screen, a fixed map line on routes, and no more endless loading on log in.",
     "required": false
   },
   "owner": {
-    "version": "1.7.0",
+    "version": "1.7.2",
     "url": "https://github.com/Seiderx/ipilgo-apps/releases/latest/download/IpilGo-Owner.apk",
-    "notes": "A new Payments screen with PayMongo proof, a monthly money card that subtracts refunds, and faster photos.",
+    "notes": "Cleaner welcome screen, and log in, forgot password and verify no longer load forever on a weak connection.",
     "required": false
   }
 }
