@@ -42,6 +42,8 @@ header.site nav a:hover{color:var(--red);}
 .btn.outline{background:none;color:var(--teal);}
 .qr{width:84px;height:84px;flex-shrink:0;padding:4px;background:#fff;border-radius:8px;}
 .qr canvas,.qr img{display:block;width:100%!important;height:100%!important;}
+/* Laptops/desktops (mouse pointer) cannot install APKs: show only the QR there. */
+@media (hover:hover) and (pointer:fine){.app .btn{display:none;}}
 .note{position:relative;text-align:center;color:#D6E7EA;font-size:14.5px;margin-top:16px;}
 .note b{color:var(--gold);}
 
