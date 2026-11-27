@@ -1,14 +1,14 @@
 {
   "tourist": {
-    "version": "1.8.0",
+    "version": "1.9.1",
     "url": "https://github.com/Seiderx/ipilgo-apps/releases/latest/download/IpilGo-Tourist.apk",
-    "notes": "New Home with the obelisk card and a header that stays while you scroll, a new bottom bar, simpler log in with a Sign up link at the bottom, and weather that always shows the temperature.",
+    "notes": "Town events on Home with a Remind me button and Add to my trip. Trips now show one day at a time with day tabs, a Saved tab for your hearted places, and they open even with no internet. Paying by GCash is now step by step. The heart turns red when you save a place.",
     "required": false
   },
   "owner": {
-    "version": "1.8.0",
+    "version": "1.9.1",
     "url": "https://github.com/Seiderx/ipilgo-apps/releases/latest/download/IpilGo-Owner.apk",
-    "notes": "New Home with your spot photo and the guests for today, a new bottom bar, money under Profile and stats under My Spot, and simpler log in with a Sign up link at the bottom.",
+    "notes": "Bookings and payments update as soon as you come back to the app, so Received and Not received show right away. Smaller Google sign-in button.",
     "required": false
   }
 }
